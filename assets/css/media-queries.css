@@ -1,0 +1,34 @@
+/* EXTRALARGE, LARGE & MEDIUM */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .education, .experience {
+        flex: 1;
+    }
+
+    .timeline {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto; 
+        gap: 20px;
+    }
+
+    .timeline-item {
+        width: 200px;
+    }
+}
+
+/* SMALL */
+@media (max-width: 767px) {
+    .timeline {
+        flex-direction: column;
+    }
+
+    .timeline-item {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+}

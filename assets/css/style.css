@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: #EDF0FC;
+    scroll-padding-top: 60px;
+
+}
+
+
+/* NAVBAR */
+
+.navbar-custom {
+    background-color: #f8f9fa;
+}
+.navbar-brand span {
+    font-size: 1.5rem;
+}
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
+.navbar-nav .nav-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #8728c7;
+}
+
+
+/* BODY GENERAL */
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EDF0FC;
+}
+
+.fst-italic {
+    font-size: 28px;
+}
+
+.text-uppercase {
+    font-size: 13px;
+    letter-spacing: 0.15rem;
+}
+
+/* BACKGROUND */
+
+.section-bg {
+    position: relative;
+    background-image: url('../img/background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.content {
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    background: transparent;
+}
+
+.content h1, .content h2, .content h3, .content h4 {
+    background: transparent;
+}
+
+.highlight {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.section-bg img {
+    margin-top: 50px;
+    max-width: 30%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-bg .img-perfil{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+
+/* ABOUT ME */
+
+.section-about-me {
+    padding: 30px 0 0 0;
+    background-color: #f7f9fc;
+    text-align: left;
+}
+
+.section-about-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px 0;
+    color: #333;
+}
+
+.section-about-me p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.section-about-me .btn {
+    margin-top: 20px;
+    background-color: #03b1b7;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* SECTIONS TITLES */
+
+.section-education, .section-experience, .section-skills, .section-contact{
+    padding: 20px 0 0 0; 
+    background-color: #f7f9fc;
+}
+
+.section-education h3, .section-experience h3, .section-skills h3, .section-contact h3{
+    margin: 20px 0 0 0;
+    color: #333;
+}
+
+/* EDUCATION & EXPERIENCE*/
+.timeline {
+    position: relative;
+    padding: 1rem 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.education .timeline-item {
+    width: 250px;
+    height: 180px;
+}
+
+.expierience .timeline-item {
+    width: 250px;
+    height: 400px;
+}
+
+.timeline-content {
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 10px
+}
+
+.timeline-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.expand-btn {
+    background: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 1; 
+}
+
+.expand-btn:hover {
+    background-color: #0056b3;
+}
+
+.expand-btn.expanded {
+    background: #6c757d;
+    color: #fff;
+    position: static;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%; 
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+/* SKILLS */
+
+.keyword-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.keyword {
+    background-color: #e0e0e0;
+    border-radius: 10PX;
+    padding: 2px 30px;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.aptitude {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.progress {
+    height: 5px;
+}
+
+.progress-bar {
+    background-color: #6f42c1;
+}
+
+
+
