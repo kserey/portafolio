@@ -1,0 +1,123 @@
+:root {
+    /* Tu Paleta Personalizada */
+    --primary-color: #8728c7;       /* Morado Principal */
+    --primary-hover: #6a1b9e;       /* Morado más oscuro para hover */
+    --accent-color: #03b1b7;        /* Turquesa para detalles/íconos */
+    --dark-bg: #111827;             /* Fondo oscuro elegante */
+    --light-bg: #f8f9fa;            /* Fondo claro */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-info {
+    color: var(--accent-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+.bg-primary-soft { background-color: rgba(135, 40, 199, 0.1); }
+.bg-info-soft { background-color: rgba(3, 177, 183, 0.1); }
+
+
+
+.tracking-wide { letter-spacing: 2px; }
+
+/* HERO SECTION */
+.section-bg {
+    background: linear-gradient(to right, rgba(17, 24, 39, 0.95), rgba(88, 28, 135, 0.4)), 
+                url('../assets/img/background.webp') no-repeat center center/cover;
+    position: relative;
+    padding-top: 80px;
+}
+
+/* TIMELINE */
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background: var(--accent-color); /* Turquesa */
+    border: 4px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: 0;
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.timeline .border-start {
+    border-color: #e9ecef !important;
+}
+
+/* CARDS ANIMATION */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    border-top: 4px solid var(--accent-color) !important; /* Detalle turquesa al pasar mouse */
+}
+
+/* FOTO DE PERFIL */
+.profile-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-color: var(--accent-color) !important; /* Borde turquesa en la foto */
+}
+
+/* ANIMACIONES */
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+.delay-1 { animation-delay: 0.3s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .timeline .border-start {
+        border-left: none !important;
+        padding-left: 0 !important;
+        margin-top: 1rem;
+    }
+    .timeline-dot { display: none; }
+}
