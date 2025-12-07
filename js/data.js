@@ -66,11 +66,11 @@ const data = {
         }        
     ],
     projects: [
-        {
-            title: "Juego Web Interactivo",
-            category: "Desarrollo Front-End (Bootcamp)",
-            description: "Aplicación web de lógica y estrategia desarrollada durante el Módulo 3. Implementación de lógica de programación con JavaScript, control de flujo y manipulación del DOM.",
-            techStack: ["JavaScript ES6", "HTML5", "CSS3", "GitHub Pages"],
+       {
+            title: "Simulador de Misión Espacial",
+            category: "Lógica JS / Desarrollo de Software",
+            description: "Simulador de estrategia y gestión de recursos por turnos. Implementa lógica compleja de estados, sistema de tripulación con roles y habilidades pasivas (skills), y cálculo dinámico de suministros.",
+            techStack: ["JavaScript Vanilla", "Bootstrap 5", "Game Logic", "DOM Manipulation"],
             link: "https://kserey.github.io/skillnest-m3-final/",
             repo: "https://github.com/kserey/skillnest-m3-final" 
         },
