@@ -37,25 +37,44 @@ function loadProfile() {
 function loadExperience() {
     const list = document.getElementById('experience-list');
     
+    // Limpiamos clases anteriores y configuramos el Grid de Bootstrap
+    list.className = 'row g-4'; 
+    
     data.experience.forEach((job, index) => {
-        // Creamos la lista de logros como HTML
-        const achievementsHtml = job.achievements.map(a => `<li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>${a}</li>`).join('');
+        const isCurrent = index === 0; // El primero es el actual
+        
+        // Diferenciar visualmente el actual
+        const colClass = isCurrent ? 'col-12' : 'col-lg-6';
+        const cardClass = isCurrent ? 'border-primary border-2' : 'border-0';
+        const bgClass = isCurrent ? 'bg-white' : 'bg-light';
+        const iconColor = isCurrent ? 'text-primary' : 'text-muted';
+
+        const achievementsHtml = job.achievements.map(a => 
+            `<li class="mb-2 d-flex align-items-start"><i class="bi bi-caret-right-fill ${iconColor} mt-1 me-2 small"></i><span>${a}</span></li>`
+        ).join('');
 
         const item = document.createElement('div');
-        item.className = 'timeline-item mb-5';
+        item.className = colClass;
+        
         item.innerHTML = `
-            <div class="row">
-                <div class="col-md-3 text-md-end">
-                    <span class="badge bg-primary-soft text-primary fw-bold mb-2 mb-md-0 d-inline-block p-2">${job.period}</span>
-                </div>
-                <div class="col-md-9 border-start border-2 ps-4 position-relative">
-                    <div class="timeline-dot"></div>
-                    <h3 class="h4 fw-bold mb-1">${job.role}</h3>
-                    <h4 class="h6 text-muted text-uppercase mb-3">${job.company}</h4>
-                    <p class="mb-3 fst-italic text-secondary">${job.description}</p>
-                    <ul class="list-unstyled text-muted small">
-                        ${achievementsHtml}
-                    </ul>
+            <div class="card h-100 shadow-sm ${cardClass} ${bgClass} hover-lift animate-fade-in" style="animation-delay: ${index * 0.1}s">
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div>
+                            <h5 class="fw-bold text-dark mb-1">${job.role}</h5>
+                            <div class="text-uppercase small fw-bold tracking-wide text-primary">${job.company}</div>
+                        </div>
+                        <span class="badge bg-white text-dark border shadow-sm">${job.period}</span>
+                    </div>
+                    
+                    <p class="card-text text-secondary mb-4">${job.description}</p>
+                    
+                    <div class="border-top pt-3">
+                        <h6 class="small fw-bold text-muted text-uppercase mb-3">Impacto Clave</h6>
+                        <ul class="list-unstyled small text-muted mb-0">
+                            ${achievementsHtml}
+                        </ul>
+                    </div>
                 </div>
             </div>
         `;
