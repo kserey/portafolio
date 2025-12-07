@@ -75,6 +75,14 @@ const data = {
             repo: "https://github.com/kserey/skillnest-m3-final" 
         },
         {
+            title: "Compad IT - Web & E-commerce",
+            category: "Desarrollo Web / E-commerce",
+            description: "Rediseño de sitio corporativo SPA y módulo de tienda. Implementa un motor de precios matricial (dispositivos vs años), gestión de estado global del carrito y generación dinámica de órdenes de compra.",
+            techStack: ["JavaScript ES6", "Bootstrap 5", "SPA Architecture", "Local Storage"],
+            link: "https://compad.cl",
+            repo: "https://github.com/kserey/web-compad" 
+        },
+        {
             title: "SaaS Check Digital",
             category: "Product Management / SaaS",
             description: "Dirección del desarrollo completo de una plataforma industrial para acreditación y control documental. Gestión del ciclo de vida del producto.",
