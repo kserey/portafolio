@@ -4,7 +4,7 @@ Este repositorio contiene el portafolio profesional desarrollado como proyecto f
 
 El sitio web está diseñado para presentar un perfil híbrido de **Gestión de Proyectos TI (Senior)** y **Desarrollo Full Stack**, utilizando una arquitectura limpia y escalable basada en JavaScript Vanilla y datos estructurados en JSON.
 
-🔗 **Demo en vivo:** [Ver Portafolio en GitHub Pages](https://kserey.github.io/portafolio-2025/)
+🔗 **Demo en vivo:** [Ver Portafolio en GitHub Pages](https://kserey.github.io/portafolio/)
 
 ## 🛠 Tecnologías Utilizadas
 
@@ -17,17 +17,17 @@ El sitio web está diseñado para presentar un perfil híbrido de **Gestión de 
 
 El proyecto sigue una estructura ordenada para facilitar la mantenibilidad:
 
-/
+```text
 ├── index.html        # Punto de entrada y esqueleto
 ├── assets/
 │   └── img/          # Recursos gráficos (perfil, fondos)
 ├── css/
 │   └── style.css     # Estilos personalizados y paleta de colores
 ├── js/
-│   ├── data.js       # "Fuente de la verdad": Contiene toda la info del CV
+│   ├── data.js       # Contiene toda la info del CV
 │   └── script.js     # Lógica que inyecta los datos en el HTML
 └── README.md         # Documentación
-
+```
 
 ## 🚀 Características Técnicas
 
@@ -46,7 +46,7 @@ El proyecto sigue una estructura ordenada para facilitar la mantenibilidad:
 ## 📦 Instalación y Despliegue
 
 1.  Clonar el repositorio:
-    git clone https://github.com/kserey/portafolio.git
+    git clone https://github.com/kserey/portafolio-2025.git
 
 2.  Abrir `index.html` en cualquier navegador moderno.
 
