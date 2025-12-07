@@ -4,7 +4,7 @@ Este repositorio contiene el portafolio profesional desarrollado como proyecto f
 
 El sitio web está diseñado para presentar un perfil híbrido de **Gestión de Proyectos TI (Senior)** y **Desarrollo Full Stack**, utilizando una arquitectura limpia y escalable basada en JavaScript Vanilla y datos estructurados en JSON.
 
-🔗 **Demo en vivo:** [Ver Portafolio en GitHub Pages](https://kserey.github.io/portafolio/)
+🔗 **Demo en vivo:** [Ver Portafolio en GitHub Pages](https://kserey.github.io/portafolio-2025/)
 
 ## 🛠 Tecnologías Utilizadas
 
