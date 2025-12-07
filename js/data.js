@@ -66,14 +66,6 @@ const data = {
         }        
     ],
     projects: [
-       {
-            title: "Simulador de Misión Espacial",
-            category: "Lógica JS / Desarrollo de Software",
-            description: "Simulador de estrategia y gestión de recursos por turnos. Implementa lógica compleja de estados, sistema de tripulación con roles y habilidades pasivas (skills), y cálculo dinámico de suministros.",
-            techStack: ["JavaScript Vanilla", "Bootstrap 5", "Game Logic", "DOM Manipulation"],
-            link: "https://kserey.github.io/skillnest-m3-final/",
-            repo: "https://github.com/kserey/skillnest-m3-final" 
-        },
         {
             title: "Compad IT - Web & E-commerce",
             category: "Desarrollo Web / E-commerce",
@@ -81,6 +73,14 @@ const data = {
             techStack: ["JavaScript ES6", "Bootstrap 5", "SPA Architecture", "Local Storage"],
             link: "https://compad.cl",
             repo: "https://github.com/kserey/web-compad" 
+        },
+       {
+            title: "Simulador de Misión Espacial",
+            category: "Lógica JS / Desarrollo de Software",
+            description: "Simulador de estrategia y gestión de recursos por turnos. Implementa lógica compleja de estados, sistema de tripulación con roles y habilidades pasivas (skills), y cálculo dinámico de suministros.",
+            techStack: ["JavaScript Vanilla", "Bootstrap 5", "Game Logic", "DOM Manipulation"],
+            link: "https://kserey.github.io/skillnest-m3-final/",
+            repo: "https://github.com/kserey/skillnest-m3-final" 
         },
         {
             title: "SaaS Check Digital",
